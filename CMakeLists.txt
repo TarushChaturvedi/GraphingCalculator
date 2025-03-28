@@ -14,3 +14,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     sfml-window
     ImGui-SFML::ImGui-SFML
 )
+
+target_include_directories(${PROJECT_NAME} PRIVATE "${imgui_SOURCE_DIR}/misc/cpp")
