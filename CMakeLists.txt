@@ -15,4 +15,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     ImGui-SFML::ImGui-SFML
 )
 
+include(FetchContent)
+FetchContent_GetProperties(imgui SOURCE_DIR imgui_SOURCE_DIR)
+
 target_include_directories(${PROJECT_NAME} PRIVATE "${imgui_SOURCE_DIR}/misc/cpp")
